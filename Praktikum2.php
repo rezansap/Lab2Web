@@ -29,7 +29,7 @@
         echo '<h2>Hasil</h2>';
         echo 'Selamat Datang Bapak/Ibu: ' . $_POST['nama'] . '<br>';
         echo 'Tanggal Lahir:' . $_POST["tanggal"] . '<br>';
-        echo 'Umur :' . date_diff(date_create($_POST["tanggal"]), date_create('today'))->y . "<br>";
+        echo 'Usia Anda :' . date_diff(date_create($_POST["tanggal"]), date_create('today'))->y . "<br>";
         echo 'Pekerjaan :' . $_POST["pekerjaan"] . '<br>';
         if ($_POST["pekerjaan"] == "Mahasiswa") {
             echo 'Pendapatan: Rp. 1.500.000 <br>';
